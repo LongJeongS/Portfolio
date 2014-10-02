@@ -7,7 +7,14 @@
 		<link rel="stylesheet" type="text/css" href="main_page.css">
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type-"text/css" href="map_markers.css">
 		<script src="ammap/ammap.js" type="text/javascript"></script>
+		<script src="ammap/maps/js/worldLow.js" type="text/javascript"></script>
+		<script src="map_markers.js" type="text/javascript"></script>
+		<script src="radar_graph.js" type="text/javascript"></script>
+		<script type="text/javascript" src="ammap/themes/none.js"></script>
+
+
 	</head>
 	
 	<body>
@@ -44,18 +51,24 @@
 			</nav> -->
 
 		</header>
-		
 		<section class = "My_Background">
 			<div class = "title">
 				<hr/ class ="small_line_background">
 				<h3><a name = "My_Background">My Background</a></h3>
 			</div>
-			<!--About me -->
+			<div class ="text">
+				<p id ="background_text">  I was born in South Korea, but I left the country in grade 4. Since, I have lived in South Africa, Canada, and Madagascar before moving back to Canada for university
+				</p>
+			</div>
+			<div id ="chartdiv" ></div>
 		</section>
 
-		<section class = "Portfolio">
-			<h2><a name = "Portfolio">Portfolio</a></h2>		
-			<!--Portfolio -->
+		<section class = "My_Radar_Graph">
+			<div class = "title">
+				<hr/ class ="small_line_background">
+				<h3><a name = "My_Radar_Garph">My Radar Graph</a></h3>
+			</div>
+			<div id="chartdiv_radar"></div>
 		</section>
 
 		<section class = "Development_Skills">
