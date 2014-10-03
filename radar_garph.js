@@ -2,22 +2,22 @@ var chart = AmCharts.makeChart("chartdiv_radar", {
     "type": "radar",
     "theme": "none",
     "dataProvider": [{
-        "Skills": "Development Skills",
+        "skill": "Development Skills",
         "level": 156.9
     }, {
-        "Skills": "Design Skills",
+        "skill": "Design Skills",
         "level": 131.1
     }, {
-        "Skills": "Problem Solving",
+        "skill": "Problem Solving",
         "level": 115.8
     }, {
-        "Skills": "Communication",
+        "skill": "Communication",
         "level": 109.9
     }, {
-        "Skills": "Early Bird",
+        "skill": "Early Bird",
         "level": 108.3
     }, {
-        "Skills": "Gaming",
+        "skill": "Gaming",
         "level": 99
     }],
     "valueAxes": [{
@@ -29,14 +29,14 @@ var chart = AmCharts.makeChart("chartdiv_radar", {
     "graphs": [{
         "balloonText": "[[value]] litres of beer per year",
         "bullet": "round",
-        "valueField": "litres"
+        "valueField": "level"
     }],
-    "categoryField": "country",
+    "categoryField": "skill",
     "exportConfig": {
         "menuTop":"10px",
         "menuRight":"10px",
         "menuItems": [{
-            "icon": '/lib/3/images/export.png',
+            "icon": 'amcharts/images/export.png',
             "format": 'png'
         }]
     }
