@@ -11,16 +11,38 @@
 		<script src="ammap/ammap.js" type="text/javascript"></script>
 		<script src="ammap/maps/js/worldLow.js" type="text/javascript"></script>
 		<script src="map_markers.js" type="text/javascript"></script>
-		<script src="jquery-2.1.1.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="full_age.js-maseter/jquery.fullPage.css">
+		<link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script src="fullPage.js-master/jquery.fullPage.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+   				 $('#fullpage').fullpage({
+   				 	anchors: ['header', 'My_Background', 'My_Radar_Graph', 'Development_Skills', 'Experience', 'Contact'],
+   				 	menu: '#menu'
+   				 });
+			});
+		</script>
 
 
 	</head>
 	
 	<body>
-		<header>
-			<a name = "Header"></a>
+
+<ul id="menu">
+	<li data-menuanchor="header"><a href="#header">header</a></li>
+	<li data-menuanchor="My_Background"><a href="#My_Background">My_Background</a></li>
+	<li data-menuanchor="My_Radar_Graph"><a href="#My_Radar_Graph">My_Radar_Graph</a></li>
+	<li data-menuanchor="Development_Skills"><a href="#Development_Skills">Development_Skills</a></li>
+	<li data-menuanchor="Experience"><a href="#Experience">Experience</a></li>
+	<li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
+</ul>
+
+
+
+	<div id="fullpage">
+		<div class="section" id="header">
 			<div class = "header">
 				<img src="Face.jpg", class="profile_photo", alt="profile_photo">
 			</div>
@@ -40,19 +62,9 @@
 					<i> &nbsp &nbsp  &nbsp I value the motivation & drive to learn.</i></p>
 				</div>
 			</div>
+		</div>
 		   
-<!-- 			<nav>
-				<ul>
-					<li><a href ="#About_Me"> About Me </a></li>
-					<li><a href = "#Portfolio">Portfolio </a></li>
-					<li><a href = "#Development_Skills">Development Skills</a></li>
-					<li><a href = "#Experience">Experience</a></li>
-					<li><a href = "#Contact">Contact</a></li>
-				</ul>
-			</nav> -->
-
-		</header>
-		<section class = "My_Background">
+		<div class="section" id = "My_Background">
 			<div class = "title">
 				<hr/ class ="small_line_background">
 				<h3><a name = "My_Background">My Background</a></h3>
@@ -62,9 +74,9 @@
 				</p>
 			</div>
 			<div id ="chartdiv" ></div>
-		</section>
+		</div>
 
-		<section class = "My_Radar_Graph">
+		<div class ="section" id = "My_Radar_Graph">
 
 			<!-- <div id="content"></div>
 			<script>
@@ -76,10 +88,10 @@
 				<h3><a name = "My_Radar_Garph">My Radar Graph</a></h3>
 			</div>
 
-		</section>
+		</div>
 
 		
-		<section class = "Development_Skills">
+		<div class ="section" id = "Development_Skills">
 
 			<svg id="circle1">
 				<circle cx="453" cy="434" r="210" stroke="none" fill="#cd2c24"/>
@@ -92,17 +104,17 @@
 
 
 
-		</section>
+		</div>
 
-		<section class = "Experience">
+		<div class ="section" id = "Experience">
 			<div class = "title">
 				<hr/ class ="small_line_background">
 				<h3><a name = "Experience">Experience</a></h3>
 			</div>
 			<!--Experience -->
-		</section>
+		</div>
 
-		<section class = "Contact">
+		<div class="section" id = "Contact">
 			<div class = "title">
 				<hr/ class ="small_line_background">
 				<h3><a name = "Contact">Contact</a></h3>
@@ -112,8 +124,8 @@
 			<a href = https://www.facebook.com/jeong.p><img src="facebook_icon.png" alt="Facebook Icon"></a>
 			<a href = https://www.linkedin.com/profile/view?id=289144762><img src="linkedin_icon.png" alt="Github Icon"></a>
 			<p> &copy; JeongWoo Park, 2014</p>
-		</section>
-		
+		</div>
+	</div>
 
 	</body>
 </html>
