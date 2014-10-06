@@ -2,28 +2,34 @@
 
             var chartData = [
                 {
-                    "country": "Czech Republic",
-                    "litres": 156.9
+                    "skill": "Development Skill",
+                    "level": 180,
+                    "description": "My strongest trait, with >3 years of experience"
                 },
                 {
-                    "country": "Ireland",
-                    "litres": 131.1
+                    "skill": "Design Skill",
+                    "level": 145,
+                    "description": "Adequate design skill with Adobe Photoshop"
                 },
                 {
-                    "country": "Germany",
-                    "litres": 115.8
+                    "skill": "Problem Solving",
+                    "level": 165,
+                    "description": "Always up for a mind-boggling problems to solve"
                 },
                 {
-                    "country": "Australia",
-                    "litres": 109.9
+                    "skill": "Liquor Capacity",
+                    "level": 130,
+                    "description": "Can definently handle my liquor"
                 },
                 {
-                    "country": "Austria",
-                    "litres": 108.3
+                    "skill": "Early Bird",
+                    "level": 100,
+                    "description": "I absolutley despise the early mornings"
                 },
                 {
-                    "country": "UK",
-                    "litres": 99
+                    "skill": "Gaming Skill",
+                    "level": 135,
+                    "description": "Big fan of MOBA, RPG, and FPS games"
                 }
             ];
 
@@ -31,8 +37,12 @@
                 // RADAR CHART
                 chart = new AmCharts.AmRadarChart();
                 chart.dataProvider = chartData;
-                chart.categoryField = "country";
+                chart.categoryField = "skill";
                 chart.startDuration = 2;
+                chart.color ="#e74c3c";
+                chart.creditsPosition = "bottom-left";
+                chart.fontFamily ='Montserrat';
+                chart.fontSize ="15";
 
                 // VALUE AXIS
                 var valueAxis = new AmCharts.ValueAxis();
@@ -45,10 +55,12 @@
 
                 // GRAPH
                 var graph = new AmCharts.AmGraph();
-                graph.valueField = "litres";
+                graph.valueField = "level";
                 graph.bullet = "round";
-                graph.balloonText = "[[value]] litres of beer per year";
+                graph.descriptionField ="description";
+                graph.balloonText = "[[description]]";
                 chart.addGraph(graph);
+
 
                 // WRITE
                 chart.write("chartdiv_radar");

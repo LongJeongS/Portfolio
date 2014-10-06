@@ -3,8 +3,8 @@
 	height	: 600px;
 	float: center;
 	position: relative;
-	top: 100px;
-	left: 80px;
+
+	left: 40px;
 	z-index: 1;
 }
 
@@ -17,16 +17,16 @@
 .pulse {
 		width: 10px;
 		height: 10px;
-		border: 5px solid #FFE11A; /*inner dot*/
+		border: 5px solid #34495e; /*inner dot*/
 		-webkit-border-radius: 30px;
 		-moz-border-radius: 30px;
 		border-radius: 30px;
-		background-color: #BEDB39;
+		background-color: #2980b9;
 		z-index: 10;
 		position: absolute;
 	}
 .map-marker .dot {
-		border: 10px solid #FD7400; /*outer dot*/
+		border: 10px solid #2c3e50; /*outer dot*/
 		background: transparent;
 		-webkit-border-radius: 60px;
 		-moz-border-radius: 60px;

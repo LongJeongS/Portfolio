@@ -7,6 +7,7 @@
 
 var map = AmCharts.makeChart("chartdiv", {
 
+
     type: "map",
     theme: "dark",
     pathToImages: "ammap/images/",
@@ -26,7 +27,7 @@ var map = AmCharts.makeChart("chartdiv", {
     },
 
     areasSettings: {
-        unlistedAreasColor: "#225378",
+        unlistedAreasColor: "#ecf0f1",
     },
 
     dataProvider: {

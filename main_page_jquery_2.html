@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JeongWoo Park | Developer</title>
+		
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="main_page.css">
+		
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700,400italic' rel='stylesheet' type='text/css'>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+
+		<script src="Radar_Graph/amcharts/amcharts.js" type="text/javascript"></script>
+        <script src="Radar_Graph/amcharts/radar.js" type="text/javascript"></script>
+        <script src="Radar_Graph/radar_graph.js" type="text/javascript"></script>
+
+        <script src="jquery.sticky.js" type="text/javascript"></script>
+
+<!--         // <script src="inview.js" type="text/javascript"></script>
+        // <script type="text/javascript">
+        // $(function () {
+        // 	$('#chartdiv_radar').bind('inview', function(event, visible){
+        // 			if (visible){
+        // 				$(this).clear();
+        // 			}
+        // 	});
+        // });
+        // </script>
+ -->
+<!-- 		<script type="text/javascript">
+			$(document).ready(function() {
+   				 $('#fullpage').fullpage({
+   				 	anchors: ['header','My_Radar_Graph', 'Development_Skills', 'Experience', 'Contact'],
+   				 	menu: '#menu',
+   				 	easing: "easeOutBack",
+   				 	autoScrolling:false
+   				 });
+			});
+		</script> -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+    			$(".feed").sticky({topSpacing:0});
+  			});
+		</script>
+	</head>
+	
+	<body>
+
+<!-- 		<div id = "header_top">
+				<li data-menuanchor="Header"><a href="#header">header</a></li>
+				<li data-menuanchor="My Background"><a href="#My_Background">My_Background</a></li>
+			 	<li data-menuanchor="My Radar Graph"><a href="#My_Radar_Graph">My_Radar_Graph</a></li>
+				<li data-menuanchor="Development Skills"><a href="#Development_Skills">Development_Skills</a></li>
+				<li data-menuanchor="Experiences"><a href="#Experience">Experience</a></li>
+				<li data-menuanchor="Contact Me"><a href="#Contact">Contact</a></li>
+		</div> -->
+
+	<div class="section" id="header2">
+
+		<div class="feed">
+			<img src="activity_feed.png" alt="activity feed">
+		</div>
+
+
+		<div class = "inner_header">
+			<div class = "name_header">
+				<h1>JEONG WOO PARK </h1>
+				<hr/ class ="small_line">
+			</div>
+			<div class = "paragraph_header">
+				<p id="header_paragraph"> <b>I’m a Software & Web designer currently attending University of Toronto</b>- eager to gain more expierence in 
+				said fields, and learn from industry professionals.
+				<br/>
+				<br/>
+				At the momment working I’m working as a web developer 
+				for Arima.io and coding on my spare time outside school.
+				</p>
+			</div>
+		</div>
+	</div>
+	   
+<!-- 		<div class="section" id = "My_Background">
+		<div class = "title">
+			<hr/ class ="small_line_background">
+			<h3><a name = "My_Background">My Background</a></h3>
+		</div>
+		<div class ="text">
+			<p id ="background_text">  I was born in <i>South Korea<i>, and since I have lived in <b>South Africa, Madagascar, and Canada.</b>
+			</p>
+		</div>
+		<div id ="chartdiv" ></div>
+	</div> -->
+
+	<div class ="section" id = "My_Radar_Graph">
+
+		<div class = "title" id="title_radar">
+			<hr/ class ="small_line_background" id ="line_radar">
+			<h3><a name = "My_Radar_Garph">My Radar Graph</a></h3>
+		</div>
+
+   		<div id="chartdiv_radar"></div>
+
+	</div>
+
+	
+	<div class ="section" id = "Development_Skills">
+
+<!-- 			<svg id="circle1">
+			<circle cx="453" cy="434" r="210" stroke="none" fill="#cd2c24"/>
+		</svg> -->
+
+		<div class = "title">
+			<hr/ class ="small_line_background">
+			<h3><a name = "Development_Skills">Development_Skills</a></h3>
+		</div>
+
+
+
+	</div>
+
+	<div class ="section" id = "Experience">
+		<div class = "title">
+			<hr/ class ="small_line_background">
+			<h3><a name = "Experience">Experience</a></h3>
+		</div>
+		<a href = https://github.com/LongJeongS><img src="github_icon.png" alt="Github Icon"></a>
+		<!--Experience -->
+	</div>
+
+	<div class="section" id = "Contact">
+		<div class = "title">
+			<hr/ class ="small_line_background">
+			<h3><a name = "Contact">Contact</a></h3>
+		</div>
+
+		<a href = https://github.com/LongJeongS><img src="github_icon.png" alt="Github Icon"></a>
+		<a href = https://www.facebook.com/jeong.p><img src="facebook_icon.png" alt="Facebook Icon"></a>
+		<a href = https://www.linkedin.com/profile/view?id=289144762><img src="linkedin_icon.png" alt="Github Icon"></a>
+		<p> &copy; JeongWoo Park, 2014</p>
+	</div>
+
+
+	</body>
+</html>

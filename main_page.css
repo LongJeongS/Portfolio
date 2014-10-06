@@ -1,5 +1,24 @@
+.feed{
+	margin-top: 20px;
+	float: right;
+	margin-right: 50px;
+}
+
+#header {
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: all .2s ease-in-out;
+}
+
+#header_top{
+	background-color: #ffffff
+}
+
+
 #menu{
-	position:fixed;
+	position:absolute;
 	top:0;
 	left:0;
 	height: 40px;
@@ -22,42 +41,49 @@
 
 /*Header Page css*/
 
-#header{
+#header2{
 	position: relative;
-	height: 150px;
+	height: 83vh;
 	width: 100%;
 }
 
-.profile_photo{
-	position: absolute;
-	top: 73px;
-	left: 46%;
-}
 
 .inner_header{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: static;
-	background-color: #f5f5f5;
+	background-repeat: no-repeat;
+	background-image: url("background2.jpg") ;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-position: 0px; 
+
+/*  	filter: alpha(opacity=30);  
+    -moz-opacity: 0.6;  
+    -khtml-opacity: 0.6;  
+    opacity: 0.6;  */
 }
 
 .name_header{
-	margin-top: 70px;
+	margin-top: -40px;
 	margin-bottom: 30px;
 	margin-left: 0 auto;
 	width: 100%;
 	text-align: center;
 	display: inline-block;
 	font-family: 'Montserrat';
-	font-size: 22pt;
-	color: #4f4f4f;
+	font-size: 17pt;
+	color:#2c3e50;
 }
 
 .small_line{
 	border: 0;
-	border-top: 2px solid #ccc;
+	border-top: 2px solid #2c3e50;
 	height: 10px;
 	width: 200px;
+	margin-top: -20px;
 }
 
 .paragraph_header{
@@ -65,56 +91,59 @@
 	margin: 0 auto;
 	text-align: center;
 	font-family: 'Quattrocento Sans', sans-serif;
-	color: #4f4f4f;
+	color: #2c3e50;
 	font-size: 22px;
 	line-height: 150%;
+	margin-top: -60px;
 }
 
 /*My Background css*/
 #My_Background{
 	height: 100vh;
 	width: 100%;
-	background-color: #304269;
+	background-color: #FF6138;
+	position: static;
 }
 
 .title{
 	font-size: 20pt;
 	float: left;
-	margin-top: 5%;
+	margin-top: 20px;
 	margin-left: 10%;
 	font-family: 'Quattrocento Sans', sans-serif;
 	color: #f5f5f5;
 }
 
 .small_line_background{
-	width: 70%;
+	width: 45%;
 	border: 0;
 	display: block;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #f5f5f5;
     margin: 1em 0;
 	height: 1px;
 	color: #f5f5f5;
+	margin-top: 
 }
 
 .text{
 	z-index: 99;
 	position: absolute;
-	width: 30%;
+	width: 50%;
 	text-align: center;
-	margin-left: 35%;
-	margin-top: 250px;
-	font-family: 'Quattrocento Sans', sans-serif;
-	color: #f5f5f5;
-	font-size: 15pt;
+	margin-left: 27%;
+	margin-top: -80px;
+	font-family: 'Josefin Slab', serif;
+	color: #2c3e50;
+	font-size: 22pt;
 }
 
 /*My Radar Graph css*/
 
 #My_Radar_Graph{
 	position: static;
-	height: 100vh;
+	height: 85vh;
 	width: 100%;
-	background-color: #91bed4;
+	background-color: #ecf0f1;
 }
 
 #chartdiv_radar{
@@ -123,62 +152,14 @@
 	font-size	: 11px;
 }
 
-#content{
-	width: 500px;
-	height: 500px;
-	margin-left: 0 auto;
+#title_radar{
+	color: #e74c3c;
 }
 
-.style0{
-	position:absolute;
-	width:1120px;
-	height:500px;
-	left:0.5px;
+ #line_radar{
+	border-top: 1px solid #c0392b;
 }
-.style1{
-	stroke:	#000000;
-	fill:	#FFFFFF;
-	stroke-opacity:	0;
-	fill-opacity:	0;
-}
-.style2{
-	stroke:	#000000;
-	stroke-opacity:	0.15;
-	fill:	none;
-}
-.style3{
 
-}
-.style4{
-	stroke:	#FF6600;
-	fill:	none;
-}
-.style5{
-	font-size:	11;
-	font-family:	Verdana;
-	text-anchor:	middle;
-	fill:	#000000;
-}
-.style6{
-	font-size:	 11px;
-}
-.style7{font-size:	11;
-	font-family:	Verdana;
-	text-anchor:	start;
-	fill:	#000000;
-}
-.style8{
-	font-size:	11;
-	font-family:	Verdana;
-	text-anchor:	end;
-	fill:	#000000;
-}
-.style9{
-	stroke:	#FF6600;
-	stroke-width:	2;
-	fill:	#FF6600;
-	stroke-opacity:	0;
-}
 
 
 
@@ -186,9 +167,9 @@
 #Development_Skills{
 	z-index: 1;
 	position: static;
-	height: 100vh;
+	height: 85vh;
 	width: 100%;
-	background-color: #d9e8f5
+	background-color: #BEEB9F
 }
 
 #circle1{
@@ -201,9 +182,9 @@
 /*Experience css*/
 #Experience{
 	position: static;
-	height: 900px;
+	height: 85vh;
 	width: 100%;
-	background-color: #91bed4
+	background-color: #79BD8F
 }
 
 /*Contact css*/
@@ -211,5 +192,5 @@
 	position: static;
 	height: 200px;
 	width: 100%;
-	background-color: #f26101
+	background-color: #00A388
 }
