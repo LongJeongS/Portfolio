@@ -53,12 +53,12 @@
 	width: 100%;
 	position: static;
 	background-repeat: no-repeat;
-	background-image: url("background2.jpg") ;
+	background-image: url("background3.jpg") ;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-  	background-position: 0px; 
+  	background-position: 0px 0px; 
 
 /*  	filter: alpha(opacity=30);  
     -moz-opacity: 0.6;  
@@ -67,34 +67,46 @@
 }
 
 .name_header{
-	margin-top: -40px;
+	margin-top: 120px;
 	margin-bottom: 30px;
 	margin-left: 0 auto;
 	width: 100%;
 	text-align: center;
 	display: inline-block;
-	font-family: 'Montserrat';
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 17pt;
-	color:#2c3e50;
+	color:#f5f5f5;
 }
 
 .small_line{
 	border: 0;
-	border-top: 2px solid #2c3e50;
+	border-top: 2px solid #f5f5f5;
 	height: 10px;
 	width: 200px;
-	margin-top: -20px;
+	margin-top: 30px;
 }
 
 .paragraph_header{
 	width: 35%;
 	margin: 0 auto;
 	text-align: center;
-	font-family: 'Quattrocento Sans', sans-serif;
-	color: #2c3e50;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #f5f5f5;
 	font-size: 22px;
 	line-height: 150%;
-	margin-top: -60px;
+	margin-top: -20px;
+}
+
+.contact_me{
+	position: relative;
+	margin-left: 47%;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.contact_me_button{
+
 }
 
 /*My Background css*/
@@ -143,21 +155,43 @@
 	position: static;
 	height: 85vh;
 	width: 100%;
-	background-color: #ecf0f1;
+	background-color: #f5f5f5;
 }
 
 #chartdiv_radar{
+	position: absolute;
 	width		: 100%;
 	height		: 500px;
 	font-size	: 11px;
+	margin-top: 200px;
+
+}
+
+.info_icon{
+	position: absolute;
+	display: block;
+	margin-left: 48%;
+	margin-top: 30px;
+
 }
 
 #title_radar{
 	color: #e74c3c;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15pt;
+	position: relative;
+	display: block;
+	margin-left: 45%;
+	margin-top: 80px;
 }
 
  #line_radar{
-	border-top: 1px solid #c0392b;
+	border-top: 1.5px solid #c0392b;
+	position: relative;
+	margin-left: 55px;
+	width: 35%;
+	margin-top: -10px;
+
 }
 
 
@@ -171,6 +205,26 @@
 	width: 100%;
 	background-color: #BEEB9F
 }
+
+#title_development{
+	color: #3498db;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15pt;
+	position: relative;
+	display: block;
+	margin-left: 45%;
+	margin-top: 80px;
+}
+
+#line_development{
+	border-top: 1.5px solid #3498db;
+	position: relative;
+	margin-left: 55px;
+	width: 35%;
+	margin-top: -10px;
+}
+
+
 
 #circle1{
 	z-index: 99;
