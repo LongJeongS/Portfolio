@@ -209,7 +209,6 @@
 
 /*Development Skills css*/
 #Development_Skills{
-	z-index: 1;
 	position: static;
 	height: 83vh;
 	width: 100%;
@@ -234,8 +233,15 @@
 	margin-top: -10px;
 }
 
+.cirlce_div{
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	margin-left: 100px;	
+}
+
 .circle{
-	width: 100%;
+	width: 90%;
 	height: 100%;
 	position: absolute;
 }
@@ -265,28 +271,28 @@
 
 #text_dev1{
 	margin-top: 640px;
-	margin-left: -478px;
-}
+/*	margin-left: -478px;
+*/}
 
 #text_dev2{
 	margin-top: 200px;
-	margin-left: -218px;
-}
+/*	margin-left: -218px;
+*/}
 
 #text_dev3{
 	margin-top: 640px;
-	margin-left: 42px;
-}
+/*	margin-left: 42px;
+*/}
 
 #text_dev4{
 	margin-top: 200px;
-	margin-left: 282px;
-}
+/*	margin-left: 282px;
+*/}
 
 #text_dev5{
 	margin-top: 640px;
-	margin-left: 482px;
-}
+/*	margin-left: 482px;
+*/}
 
 
 
@@ -297,6 +303,7 @@
 	width: 100%;
 	background-color: #79BD8F;
 }
+
 
 #title_experience{
 	color: #ecf0f1;
@@ -320,12 +327,26 @@
 	margin-top: 27px;
 }
 
+.experience_box{
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.inline_box{
+	display: inline-block;
+	width: 120px;
+	height: 200px;
+
+}
+
 /*Contact css*/
 #Contact{
 	position: static;
 	height: 200px;
 	width: 100%;
-	background-color: #00A388
+	background-color: #00A388;
 }
 
 #title_contact{
