@@ -75,7 +75,7 @@
 	display: inline-block;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 17pt;
-	color:#f5f5f5;
+	color:#ecf0f1;
 }
 
 .small_line{
@@ -153,7 +153,7 @@
 
 #My_Radar_Graph{
 	position: static;
-	height: 85vh;
+	height: 83vh;
 	width: 100%;
 	background-color: #f5f5f5;
 }
@@ -171,7 +171,7 @@
 	position: absolute;
 	display: block;
 	margin-left: 48%;
-	margin-top: 30px;
+	margin-top: 20px;
 
 }
 
@@ -182,7 +182,7 @@
 	position: relative;
 	display: block;
 	margin-left: 45%;
-	margin-top: 80px;
+	margin-top: 65px;
 }
 
  #line_radar{
@@ -194,14 +194,24 @@
 
 }
 
+.radar_paragraph{
+	position: absolute;
+	display: inline-block;
+	margin-top: 150px;
+	margin-left: -300px;
+	text-align: center;
+	color: #e74c3c;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 13pt;
 
 
+}
 
 /*Development Skills css*/
 #Development_Skills{
 	z-index: 1;
 	position: static;
-	height: 85vh;
+	height: 83vh;
 	width: 100%;
 	background-color: #BEEB9F
 }
@@ -213,7 +223,7 @@
 	position: relative;
 	display: block;
 	margin-left: 45%;
-	margin-top: 80px;
+	margin-top: 65px;
 }
 
 #line_development{
@@ -224,21 +234,90 @@
 	margin-top: -10px;
 }
 
-
-
-#circle1{
-	z-index: 99;
+.circle{
 	width: 100%;
 	height: 100%;
 	position: absolute;
 }
 
+.inner_circle{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.line{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.text_dev{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	font-family: 'Quattrocento Sans', sans-serif, bold;
+	color: #3498db;
+	text-align: center;
+	font-weight: 700;
+	font-size: 12pt;
+}
+
+#text_dev1{
+	margin-top: 640px;
+	margin-left: -478px;
+}
+
+#text_dev2{
+	margin-top: 200px;
+	margin-left: -218px;
+}
+
+#text_dev3{
+	margin-top: 640px;
+	margin-left: 42px;
+}
+
+#text_dev4{
+	margin-top: 200px;
+	margin-left: 282px;
+}
+
+#text_dev5{
+	margin-top: 640px;
+	margin-left: 482px;
+}
+
+
+
 /*Experience css*/
 #Experience{
 	position: static;
-	height: 85vh;
+	height: 86vh;
 	width: 100%;
-	background-color: #79BD8F
+	background-color: #79BD8F;
+}
+
+#title_experience{
+	color: #ecf0f1;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15pt;
+	position: relative;
+	display: block;
+	margin-left: 46.8%;
+	margin-top: 70px;
+}
+
+#line_experience{
+	border-top: 1.5px solid #ecf0f1;
+	position: relative;
+	margin-left: 35px;
+	width: 35%;
+	margin-top: -15px;
+}
+
+#briefcase{
+	margin-top: 27px;
 }
 
 /*Contact css*/
@@ -247,4 +326,22 @@
 	height: 200px;
 	width: 100%;
 	background-color: #00A388
+}
+
+#title_contact{
+	color: #f1c40f;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15pt;
+	position: relative;
+	display: block;
+	margin-left: 47.5%;
+	margin-top: 65px;
+}
+
+#line_contact{
+	border-top: 1.5px solid #f1c40f;
+	position: relative;
+	margin-left: 30px;
+	width: 35%;
+	margin-top: -10px;
 }

@@ -6,6 +6,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="normalize.css">
 		<link rel="stylesheet" type="text/css" href="main_page.css">
+		<link rel="stylesheet" type="text/css" href="animate.css">
 		
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -48,6 +49,11 @@
 			$(document).ready(function(){
     			$(".feed").sticky({topSpacing:0});
   			});
+		</script>
+
+		<script src="wow.js"></script>
+		<script>
+		 	new WOW().init();
 		</script>
 	</head>
 	
@@ -102,24 +108,91 @@
 	</div> -->
 
 	<div class ="section" id = "My_Radar_Graph">
-
+		<div class = "info_icon">
+			<img src="info.png" alt="info_icon" >
+		</div>
 		<div class = "title" id="title_radar">
  			<h3><a name = "My_Radar_Garph">My Radar Graph</a></h3>
  			<hr/ class ="small_line_background" id ="line_radar">
 		</div>
-		<div class = "info_icon">
-			<img src="info.png" alt="info_icon" >
+		<div class = "radar_paragraph">
+			<p>Take a look at the radar chart to see the breakdown of my skills, <br/>
+			   hover over the individual circles for more detail.</p>
 		</div>
-   		<div id="chartdiv_radar"></div>
+
+   		<div class ="wow rollIn"id="chartdiv_radar"></div>
 
 	</div>
 
 	
 	<div class ="section" id = "Development_Skills">
 
-<!-- 			<svg id="circle1">
-			<circle cx="453" cy="434" r="210" stroke="none" fill="#cd2c24"/>
-		</svg> -->
+		<div class="circle 1 wow rollIn" >
+			<svg class="circle" id="circle1">
+				<circle cx="353" cy="434" r="160" stroke="none" fill="#cd2c24"/>
+			</svg>
+			<svg class="inner_circle" id="inner_circle1">
+				<circle cx="353" cy="434" r="5" stroke="none" fill="#3498db"/>
+			</svg>
+			<svg class ="line" id="line1">
+	  			<line x1="353" y1="439" x2="353" y2="634" style="stroke:#3498db;stroke-width:1" />
+			</svg>
+			<p class="text_dev" id="text_dev1">C <br/>(Hot) </p>
+		</div>
+
+		<div class="circle 2 wow rollIn" data-wow-delay="0.5s">
+			<svg class="circle" id="circle2">
+				<circle cx="613" cy="434" r="100" stroke="none" fill="#ffb800"/>
+			</svg>
+			<svg class="inner_circle" id="inner_circle2">
+				<circle cx="613" cy="434" r="5" stroke="none" fill="#3498db"/>
+			</svg>
+			<svg class ="line" id="line2">
+	  			<line x1="613" y1="439" x2="613" y2="239" style="stroke:#3498db;stroke-width:1" />
+			</svg>		
+			<p class="text_dev" id="text_dev2"> JavaScript &  jQuery<br/>(Rookie) </p>
+		</div>
+
+		<div class="circle 3 wow rollIn" data-wow-delay="1s">
+			<svg class="circle" id="circle3">
+				<circle cx="873" cy="434" r="160" stroke="none" fill="#ff8900"/>
+			</svg>
+			<svg class="inner_circle" id="inner_circle3">
+				<circle cx="873" cy="434" r="5" stroke="none" fill="#3498db"/>
+			</svg>
+			<svg class ="line" id="line3">
+	  			<line x1="873" y1="439" x2="873" y2="634" style="stroke:#3498db;stroke-width:1" />
+			</svg>
+			<p class="text_dev" id="text_dev3"> HTML & CSS<br/>(Ninja) </p>
+
+		</div>
+
+		<div class="circle  4 wow rollIn" data-wow-delay="1.5s">
+			<svg class="circle" id="circle4">
+				<circle cx="1113" cy="434" r="80" stroke="none" fill="#ffbe73"/>
+			</svg>
+			<svg class="inner_circle" id="inner_circle4">
+				<circle cx="1113" cy="434" r="5" stroke="none" fill="#3498db"/>
+			</svg>
+			<svg class ="line" id="line4">
+	  			<line x1="1113" y1="439" x2="1113" y2="239" style="stroke:#3498db;stroke-width:1" />
+			</svg>			
+			<p class="text_dev" id="text_dev4"> Ruby on Rails <br/>(Learner) </p>
+		</div>
+
+		<div class="circle 5 wow rollIn" data-wow-delay="2s">
+			<svg class="circle" id="circle5">
+				<circle cx="1313" cy="434" r="120" stroke="none" fill="#f2836b"/>
+			</svg>
+			<svg class="inner_circle" id="inner_circle5">
+				<circle cx="1313" cy="434" r="5" stroke="none" fill="#3498db"/>
+			</svg>
+			<svg class ="line" id="line5">
+	  			<line x1="1313" y1="439" x2="1313" y2="634" style="stroke:#3498db;stroke-width:1" />
+			</svg>		
+			<p class="text_dev" id="text_dev5"> Java <br/>(Mild) </p>	
+		</div>
+
 
 		<div class = "title" id="title_development">
  			<h3><a name = "Development_Skills">Development Skills</a></h3>
@@ -129,25 +202,26 @@
 			<img src="keyboard.png" alt="keyboard_icon" >
 		</div>
 
-
-
-
-
 	</div>
 
 	<div class ="section" id = "Experience">
-		<div class = "title">
-			<hr/ class ="small_line_background">
+
+		<div class = "title" id="title_experience">
 			<h3><a name = "Experience">Experience</a></h3>
+			<hr/ class ="small_line_background" id="line_experience">
 		</div>
-		<a href = https://github.com/LongJeongS><img src="github_icon.png" alt="Github Icon"></a>
-		<!--Experience -->
+		<div class = "info_icon" id="briefcase">
+			<img src="briefcase.png" alt="briefcase_icon" >
+		</div>
 	</div>
 
 	<div class="section" id = "Contact">
-		<div class = "title">
-			<hr/ class ="small_line_background">
+		<div class = "title" id="title_contact">
 			<h3><a name = "Contact">Contact</a></h3>
+			<hr/ class ="small_line_background" id="line_contact">
+		</div>
+		<div class = "info_icon" id="contact_icon">
+			<img src="contact.png" alt="contact_icon" >
 		</div>
 
 		<a href = https://github.com/LongJeongS><img src="github_icon.png" alt="Github Icon"></a>
