@@ -55,6 +55,7 @@
 		<script>
 		 	new WOW().init();
 		</script>
+
 	</head>
 	
 	<body>
@@ -216,43 +217,51 @@
 	<div class ="section" id = "Experience">
 
 
-		<div class = "title" id="title_experience">
+<!-- 		<div class = "title" id="title_experience">
 			<h3><a name = "Experience">Experience</a></h3>
 			<hr/ class ="small_line_background" id="line_experience">
 		</div>
 		<div class = "info_icon" id="briefcase">
 			<img src="briefcase.png" alt="briefcase_icon" >
-		</div>
+		</div> -->
 		
-		<div class= "experience_box">
-			<div class="UofT inline_box">
+		<div class= "experience_box" id="experience_box">
+			<article>
 				<h3>University of Toronto</h3>
 				<p>Attending University of Toronto as Third year in Computer Science Specialist program. </p>
-			</div>
-			<div class="Barista inline_box">
-				<h3>Barista at Starbucks</h3>
-				<p>Worked as a barista at at Starbucks between May 2013 to November 2013</p>
-			</div>
-			<div class="Marketing_Associate inline_box">
-				<h3>Marketing Associate for OneClass</h3>
-				<p>Representative for OneClass at St. George campus at U of T, helping to develop marketing campaigns and promote to students and professors; between Jan2014 - May2014</p>
-			</div>
-			<div class="Social_Media_Intern inline_box">
-				<h3>Social Media Intern for AIESEC</h3>
-				<p> Part of the social media team that promotes AIESEC and its event's on social media, between Sep2013 - Jan 2014</p>
-			</div>
-			<div class="A.Y.A.A. inline_box">
-				<h3>Executive Member at A.Y.A.A</h3>
-				<p>Executive and founding member for Awakened Youth Against Apathy, a startup student organization. Our mission is to raise political awareness amongst the student body.</p>
-			</div>
-			<div class="IT inline_box">
-				<h3>I.T. Support at New College</h3>
-				<p>I.T. support at new college, University of Toronto. Provide support to residence networking, lab computer, classroom audio and visual equipment.</p>
-			</div>
-			<div class="Web_Designer inline_box">
+			</article>
+			<article>
+				<h3>Founder and Full-Stack Developer</h3>
+				<p>As 1 of 3 co-founders of StudyBuddies, I am responsible for both business and technical side of the StartUp. From meeting VC's and angel investors to coding back-end and front-end of the website</p>
+			</article>
+			<article>
 				<h3>Web Designer at Arima.io</h3>
 				<p>Arima is a Toronto-based startup company focused on data aggregation and presentation. My responsibilities include helping out with coding the front-end U.I. and integrating the back-end with Rails.</p>
-			</div>
+			</article>
+			<article>
+				<h3>I.T. Support at New College</h3>
+				<p>I.T. support at new college, University of Toronto. Provide support to residence networking, lab computer, classroom audio and visual equipment.</p>
+			</article>
+
+			<article>
+				<h3>Marketing Associate for OneClass</h3>
+				<p>Representative for OneClass at St. George campus at U of T, helping to develop marketing campaigns and promote to students and professors; between Jan2014 - May2014</p>
+			</article>
+			<article>
+				<h3>Social Media Intern for AIESEC</h3>
+				<p> Part of the social media team that promotes AIESEC and its event's on social media, between Sep2013 - Jan 2014</p>
+			</article>
+			<article>
+				<h3>Executive Member at A.Y.A.A</h3>
+				<p>Executive and founding member for Awakened Youth Against Apathy, a startup student organization. Our mission is to raise political awareness amongst the student body.</p>
+			</article>
+			<article>
+				<h3>Barista at Starbucks</h3>
+				<p>Worked as a barista at at Starbucks between May 2013 to November 2013</p>
+			</article>
+
+
+
 		</div>
 	</div>
 
@@ -271,6 +280,34 @@
 		<p> &copy; JeongWoo Park, 2014</p>
 	</div>
 
+	<script type="text/javascript">
+		var $container  = $('#experience_box'),
+		    $articles   = $container.children('article'),
+		    timeout;
+		 
+		$articles.on( 'mouseenter', function( event ) {
+		         
+		    var $article    = $(this);
+		    clearTimeout( timeout );
+		    timeout = setTimeout( function() {
+		         
+		        if( $article.hasClass('active') ) return false;
+		         
+		        $articles.not($article).removeClass('active').addClass('blur');
+		         
+		        $article.removeClass('blur').addClass('active');
+		         
+		    }, 75 );
+		     
+		});
+		 
+		$container.on( 'mouseleave', function( event ) {
+		     
+		    clearTimeout( timeout );
+		    $articles.removeClass('active blur');
+		     
+		});
+	</script>
 
 	</body>
 </html>
